@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #27323b;
+    color: #cccccc;
+    margin: 0;
+    padding: 0;
+}
+.name {
+    text-decoration: none;
+    float: right;
+    width: min-content;
+}
+.welcome-bg {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    background-image: url("/images/enrique-guzman-egas-gSstgCAgd3U-unsplash.jpg");
+    background-size: cover;
+    height: 100vh + 30px;
+}
+.welcome {
+    margin: 0 20%;
+    padding: 10px;
+    background: #131619;
+    border: 1px solid #33404b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.msgs-container {
+    font-size: small;
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+.posted-at {
+    font-size: smaller;
+}
+.chat-textarea {
+    width: 100%;
+}
+.msg {
+    display: block;
+    margin: 5px auto;
+}
+.friends {
+    padding: 10px;
+}
+.current-friends,
+.wannabe-friends {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.friend {
+    padding: 10px;
+    align-self: center;
+}
+.welcome h3,
+.welcome h1 {
+    text-align: center;
+}
+.content {
+    margin: 15px;
+    padding: 15px;
+    background: #131619;
+    border: 1px solid #33404b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+label {
+    font-size: smaller;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form p {
+    font-size: smaller;
+}
+.header {
+    min-width: auto;
+    padding: 10px;
+    margin: 15px;
+    min-height: 70px;
+    background: #131619;
+    border: 1px solid #33404b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .logo {
+    height: 50px;
+    margin-top: 15px;
+    margin-right: 7px;
+}
+.blank {
+    flex-grow: 1;
+}
+.big-logo {
+    width: 30%;
+}
+.header .profile-pic {
+    height: 50px;
+    width: auto;
+    margin-right: 5px;
+    z-index: 10;
+}
+.header .button {
+    padding: 5px;
+    text-decoration: none;
+    font-weight: normal;
+}
+.profile-pic {
+    width: 30vw;
+}
+.modal {
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    color: #cccccc;
+    background: #131619;
+    border-left: 1px solid #33404b;
+    border-top: 1px solid #33404b;
+    border-bottom: 1px solid #27323b;
+    border-right: 1px solid #27323b;
+}
+.bio {
+    height: 60px;
+    width: 60%;
+}
+.clickable {
+    text-decoration: underline;
+}
+.clickable:hover {
+    cursor: pointer;
+}
+.img-box {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.result-profile-pic {
+    width: 100%;
+}
+.user-result-box {
+    margin: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.user-result-box p {
+    padding-left: 10px;
+}
+button,
+.button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px;
+    height: 2rem;
+    color: #cccccc;
+    background: #27323b;
+    border-top: 1px solid #181b16;
+    border-right: 3px solid #181b16;
+    border-left: 1px solid #181b16;
+    border-bottom: 3px solid #181b16;
+}
+button:hover,
+.button:hover {
+    background-color: #34424d;
+    cursor: pointer;
+}
+button:active,
+.button:active {
+    border-top: 3px solid #181b16;
+    border-right: 1px solid #181b16;
+    border-left: 3px solid #181b16;
+    border-bottom: 1px solid #181b16;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+ul li {
+    margin: 10px;
+}
+ul li button {
+    height: min-content;
+}
+ul li::before {
+    content: "\2022";
+    color: green;
+}
+a,
+a:visited {
+    color: #cccccc;
+    font-weight: bold;
+}
+.x-btn {
+    color: #cccccc;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+}
+.save-btn {
+    display: block;
+}
+.error {
+    font-weight: bold;
+    color: red;
+}
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 733px) {
+    #nav-bar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header .button {
+        font-weight: normal;
+        font-size: smaller;
+        padding: 2px;
+        height: min-content;
+        margin: 0;
+    }
+    .name {
+        display: none;
+    }
+    .header .logo {
+        margin-top: 5px;
+    }
+}
