@@ -1,4 +1,4 @@
-# Old Skullerz
+# Old Skullers
 
 A social network to connect to your fellow classic gamer friends!
 
