@@ -13,7 +13,7 @@ export default class Welcome extends React.Component {
             <HashRouter>
                 <div className="welcome-bg">
                     <div className="welcome">
-                        <h1>Welcome to Old Skullerz</h1>
+                        <h1>Welcome to Old Skullers</h1>
                         <img
                             className="big-logo"
                             src="./images/skull_logo.png"
